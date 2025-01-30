@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .title {
+    font-size: 3rem;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hero .subtitle {
+    font-size: 1.5rem;
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.hero-image {
+    width: 300px;
+    margin-top: 20px;
+    opacity: 0;
+    transform: scale(0.8);
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 20px;
+}
+
+.feature {
+    text-align: center;
+    max-width: 300px;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.feature img {
+    width: 80px;
+}
+
+/* Photo Gallery */
+.gallery {
+    padding: 50px 20px;
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery-container img {
+    width: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Call to Action */
+.cta {
+    padding: 50px;
+    background: #111;
+}
+
+.cta button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #ff5722;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cta button:hover {
+    background: #e64a19;
+}
